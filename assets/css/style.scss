@@ -1,0 +1,65 @@
+---
+---
+
+/* Theme */
+$bg-color:   #FFF8E1;  /* Butter Yellow */
+$card-bg:    #FFFFFF;  /* White */
+$ink-color:  #2D3436;  /* Charcoal Text */
+$accent:     #FF7675;  /* Salmon Pink */
+$font-main:  'Nunito', sans-serif;
+$font-head:  'Fredoka One', cursive;
+
+/* Global Styles */
+body {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  
+  /* Centering */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: $bg-color; 
+  color: $ink-color;
+}
+
+/* Card */
+main {
+  max-width: 600px;
+  padding: 40px;
+  background: $card-bg;
+  text-align: center;
+  
+  border: 4px solid $ink-color; 
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px $ink-color; 
+}
+
+/* Typography */
+h1 {
+  font-family: $font-head;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: $ink-color;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Links */
+a {
+  color: $accent;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid $accent;
+
+  &:hover {
+    background-color: $accent;
+    color: white;
+  }
+}
