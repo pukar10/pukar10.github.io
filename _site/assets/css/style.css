@@ -15,7 +15,7 @@ main { max-width: 600px; padding: 40px; background: #1E293B; text-align: center;
 /* ========================================= */
 /* 🪐 FLOATING AVATAR                        */
 /* ========================================= */
-.floating-avatar { position: absolute; top: -60px; /* Move UP */ left: -60px; /* Move LEFT */ width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #000000; background-color: #1E293B; z-index: -1; /* Sends behind main card */ }
+.floating-avatar { position: absolute; top: -60px; /* Move UP */ left: -60px; /* Move LEFT */ width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #000000; background-color: #1E293B; z-index: -1; }
 
 /* Mobile Fix: Center it on top for small screens */
 @media (max-width: 768px) { .floating-avatar { top: -70px; left: 50%; transform: translateX(-50%); /* Centers it */ z-index: 11; /* Bring to FRONT on mobile so it isn't hidden */ }
@@ -31,10 +31,6 @@ h1 { font-family: "Lilita One", cursive; font-size: 3rem; margin-bottom: 10px; c
 /* 🖼️ IMAGES & LISTS                         */
 /* ========================================= */
 .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #000000; margin-bottom: 20px; background-color: #1E293B; }
-
-.hobby-list { text-align: left; display: inline-block; margin-bottom: 30px; }
-
-.hobby-item { font-size: 1.1rem; margin-bottom: 12px; font-weight: bold; color: #F8FAFC; }
 
 /* ========================================= */
 /* 🔘 BUTTONS & LINKS                        */

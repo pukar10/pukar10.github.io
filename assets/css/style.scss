@@ -70,7 +70,7 @@ main {
   border: 4px solid $ink-color; 
   background-color: $card-bg;
   
-  z-index: -1; /* Sends behind main card */
+  z-index: -1;
 }
 
 /* Mobile Fix: Center it on top for small screens */
@@ -123,19 +123,6 @@ h1 {
   border: 4px solid $ink-color; 
   margin-bottom: 20px; 
   background-color: $card-bg;
-}
-
-.hobby-list {
-  text-align: left;
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.hobby-item {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  font-weight: bold;
-  color: $text-color;
 }
 
 
