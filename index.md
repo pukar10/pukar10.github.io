@@ -15,7 +15,7 @@ title: Homepage
     He is either <em>Tinkering</em> with Tech 🤖<br>
     <em>Pickling</em> at Pickleball 🥒<br>
     <em>Bluffing</em> at Poker 🃏<br> 
-    or <em>Crusing</em> on his GSXR-750 🏍️
+    or <em>Cruising</em> on his GSXR-750 🏍️
 </p>
 
 <p class="home-footer">
