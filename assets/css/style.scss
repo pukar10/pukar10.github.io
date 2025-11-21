@@ -146,8 +146,13 @@ a {
 
 /* Homepage */
 .home-title {
+  font-size: 4rem;
   margin-bottom: 0px;
   line-height: 1;
+
+  .highlight {
+    color: $accent;
+  }
 }
 
 .home-subtitle {
@@ -161,7 +166,13 @@ a {
   }
 }
 
-.bio-text {
-  margin-top: 20px;   /* Adds a little breathing room before the bio starts */
-  font-size: 1.2rem;
+.home-bio {
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.home-footer {
+  margin-top: 25px;
+  font-size: 1rem;
+  opacity: 0.8;
 }

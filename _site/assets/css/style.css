@@ -43,9 +43,12 @@ a:hover { color: #51dcf2; border-bottom-color: #51dcf2; }
 /* ✨ Custom Pages                          */
 /* ========================================= */
 /* Homepage */
-.home-title { margin-bottom: 0px; line-height: 1; }
+.home-title { font-size: 4rem; margin-bottom: 0px; line-height: 1; }
+.home-title .highlight { color: #22D3EE; }
 
 .home-subtitle { margin-top: 0px; font-size: 1.6rem; color: #F8FAFC; font-family: "Nunito", sans-serif; }
 .home-subtitle .highlight { color: #22D3EE; }
 
-.bio-text { margin-top: 20px; /* Adds a little breathing room before the bio starts */ font-size: 1.2rem; }
+.home-bio { margin-top: 30px; font-size: 1.1rem; }
+
+.home-footer { margin-top: 25px; font-size: 1rem; opacity: 0.8; }
