@@ -1,19 +1,51 @@
-/* Theme */
-/* Butter Yellow */
-/* White */
-/* Charcoal Text */
-/* Salmon Pink */
-/* Global Styles */
-body { font-family: "Nunito", sans-serif; margin: 0; padding: 0; /* Centering */ min-height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #FFF8E1; color: #2D3436; }
+@charset "UTF-8";
+/* ========================================= */
+/* 🎨 COLOR THEME SELECTION                  */
+/* ========================================= */
+/* ========================================= */
+/* 🔤 FONTS & GLOBALS                        */
+/* ========================================= */
+body { font-family: "Nunito", sans-serif; margin: 0; padding: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #0F172A; color: #F8FAFC; }
 
-/* Card */
-main { max-width: 600px; padding: 40px; background: #FFFFFF; text-align: center; border: 4px solid #2D3436; border-radius: 20px; box-shadow: 10px 10px 0px #2D3436; }
+/* ========================================= */
+/* 🃏 THE CARD                               */
+/* ========================================= */
+main { max-width: 600px; padding: 40px; background: #1E293B; text-align: center; /* Thick black borders keep it cartoonish even in dark mode */ border: 4px solid #000000; border-radius: 20px; /* Hard shadow creates the "Sticker" pop */ box-shadow: 10px 10px 0px #000000; }
 
-/* Typography */
-h1 { font-family: "Fredoka One", cursive; font-size: 3rem; margin-bottom: 10px; color: #2D3436; }
+/* ========================================= */
+/* ✍️ TYPOGRAPHY                             */
+/* ========================================= */
+h1 { font-family: "Lilita One", cursive; font-size: 3rem; margin-bottom: 10px; color: #F8FAFC; /* White text */ /* Optional: Adds a text outline to make headers pop */ text-shadow: 2px 2px 0px #000000; }
 
-p { font-size: 1.3rem; line-height: 1.6; margin-bottom: 30px; }
+.subtitle { font-size: 1.2rem; color: #22D3EE; /* Make the subtitle pop with color */ margin-top: -10px; margin-bottom: 30px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
 
-/* Links */
-a { color: #FF7675; text-decoration: none; font-weight: bold; border-bottom: 3px solid #FF7675; }
-a:hover { background-color: #FF7675; color: white; }
+/* ========================================= */
+/* 🖼️ IMAGES & LISTS                         */
+/* ========================================= */
+.profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #000000; margin-bottom: 20px; background-color: #1E293B; }
+
+.hobby-list { text-align: left; display: inline-block; margin-bottom: 30px; }
+
+.hobby-item { font-size: 1.1rem; margin-bottom: 12px; font-weight: bold; color: #F8FAFC; }
+
+/* ========================================= */
+/* 🔘 BUTTONS & LINKS                        */
+/* ========================================= */
+/* Main Button Style */
+.btn-main { display: inline-block; background-color: #22D3EE; color: #000000 !important; /* Dark text on bright button */ padding: 12px 30px; border-radius: 50px; font-weight: 900; text-transform: uppercase; border: 3px solid #000000; box-shadow: 4px 4px 0px #000000; transition: transform 0.1s; text-decoration: none; }
+.btn-main:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0px #000000; background-color: #51dcf2; }
+
+/* Standard Links */
+a { color: #22D3EE; text-decoration: none; border-bottom: 2px solid #22D3EE; }
+a:hover { color: #51dcf2; border-bottom-color: #51dcf2; }
+
+/* ========================================= */
+/* ✨ Custom Pages                          */
+/* ========================================= */
+/* Homepage */
+.home-title { margin-bottom: 0px; line-height: 1; }
+
+.home-subtitle { margin-top: 0px; font-size: 1.6rem; color: #F8FAFC; font-family: "Nunito", sans-serif; }
+.home-subtitle .highlight { color: #22D3EE; }
+
+.bio-text { margin-top: 20px; /* Adds a little breathing room before the bio starts */ font-size: 1.2rem; }

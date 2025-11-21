@@ -1,65 +1,167 @@
 ---
 ---
 
-/* Theme */
-$bg-color:   #FFF8E1;  /* Butter Yellow */
-$card-bg:    #FFFFFF;  /* White */
-$ink-color:  #2D3436;  /* Charcoal Text */
-$accent:     #FF7675;  /* Salmon Pink */
-$font-main:  'Nunito', sans-serif;
-$font-head:  'Fredoka One', cursive;
+/* ========================================= */
+/* 🎨 COLOR THEME SELECTION                  */
+/* ========================================= */
+$bg-color:   #0F172A;
+$card-bg:    #1E293B;
+$text-color: #F8FAFC;
+$accent:     #22D3EE;
+$ink-color:  #000000;
 
-/* Global Styles */
+
+
+/* ========================================= */
+/* 🔤 FONTS & GLOBALS                        */
+/* ========================================= */
+$font-main: 'Nunito', sans-serif;
+$font-head: 'Lilita One', cursive;
+
 body {
   font-family: $font-main;
   margin: 0;
   padding: 0;
-  
-  /* Centering */
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   
   background-color: $bg-color; 
-  color: $ink-color;
+  color: $text-color;
 }
 
-/* Card */
+
+
+/* ========================================= */
+/* 🃏 THE CARD                               */
+/* ========================================= */
 main {
   max-width: 600px;
   padding: 40px;
   background: $card-bg;
   text-align: center;
   
+  /* Thick black borders keep it cartoonish even in dark mode */
   border: 4px solid $ink-color; 
   border-radius: 20px;
+  
+  /* Hard shadow creates the "Sticker" pop */
   box-shadow: 10px 10px 0px $ink-color; 
 }
 
-/* Typography */
+
+
+/* ========================================= */
+/* ✍️ TYPOGRAPHY                             */
+/* ========================================= */
 h1 {
   font-family: $font-head;
   font-size: 3rem;
   margin-bottom: 10px;
-  color: $ink-color;
+  color: $text-color; /* White text */
+  
+  /* Optional: Adds a text outline to make headers pop */
+  text-shadow: 2px 2px 0px $ink-color;
 }
 
-p {
-  font-size: 1.3rem;
-  line-height: 1.6;
+.subtitle {
+  font-size: 1.2rem;
+  color: $accent; /* Make the subtitle pop with color */
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+
+/* ========================================= */
+/* 🖼️ IMAGES & LISTS                         */
+/* ========================================= */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid $ink-color; 
+  margin-bottom: 20px; 
+  background-color: $card-bg;
+}
+
+.hobby-list {
+  text-align: left;
+  display: inline-block;
   margin-bottom: 30px;
 }
 
-/* Links */
+.hobby-item {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: $text-color;
+}
+
+
+
+/* ========================================= */
+/* 🔘 BUTTONS & LINKS                        */
+/* ========================================= */
+/* Main Button Style */
+.btn-main {
+  display: inline-block;
+  background-color: $accent;
+  color: $ink-color !important; /* Dark text on bright button */
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid $ink-color;
+  box-shadow: 4px 4px 0px $ink-color;
+  transition: transform 0.1s;
+  text-decoration: none;
+  
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px $ink-color;
+    background-color: lighten($accent, 10%);
+  }
+}
+
+/* Standard Links */
 a {
   color: $accent;
   text-decoration: none;
-  font-weight: bold;
-  border-bottom: 3px solid $accent;
-
+  border-bottom: 2px solid $accent;
+  
   &:hover {
-    background-color: $accent;
-    color: white;
+    color: lighten($accent, 10%);
+    border-bottom-color: lighten($accent, 10%);
   }
+}
+/* ========================================= */
+/* ✨ Custom Pages                          */
+/* ========================================= */
+
+/* Homepage */
+.home-title {
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.home-subtitle {
+  margin-top: 0px;
+  font-size: 1.6rem;
+  color: $text-color;
+  font-family: $font-main;
+  
+  .highlight {
+    color: $accent;
+  }
+}
+
+.bio-text {
+  margin-top: 20px;   /* Adds a little breathing room before the bio starts */
+  font-size: 1.2rem;
 }

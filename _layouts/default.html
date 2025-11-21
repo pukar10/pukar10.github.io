@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage | Pukar Subedi</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Chewy&family=Luckiest+Guy&family=Nunito:wght@400;700&family=Rubik+Mono+One&family=Titan+One&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Paytone+One&family=Poppins:wght@900&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -11,18 +11,7 @@
 <body>
 
   <main>
-    <h1 class="home-title">OH, HELLO THERE!</h1>
-
-<h2 class="home-subtitle">You've found <span class="highlight">Pukar</span></h2>
-
-<p class="bio-text">
-  He is either tinkering with Tech 🤖, playing Pickleball 🥒, bluffing at Poker 🃏, or riding his motorcycle 🏍️.
-</p>
-
-<p>
-  Feel free to take a look around, or <a href="https://github.com/pukar10">Check out his projects on GitHub</a>.
-</p>
-
+    {{ content }}
   </main>
 
 </body>

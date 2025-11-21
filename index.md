@@ -3,10 +3,14 @@ layout: default
 title: Homepage
 ---
 
-# Oh, Hello there! 👋
+<h1 class="home-title">OH, HELLO THERE!</h1>
 
-You found **Pukar**. 
+<h2 class="home-subtitle">You've found <span class="highlight">Pukar</span></h2>
 
-He is either tinking with Tech 🤖, playing Pickball 🥒, bluffing at Poker 🃏, or on his motorcycle 🏍️.
+<p class="bio-text">
+  He is either tinkering with Tech 🤖, playing Pickleball 🥒, bluffing at Poker 🃏, or riding his motorcycle 🏍️.
+</p>
 
-Feel free to take a look around, or [Check out his other projects on GitHub](https://github.com/pukar10).
+<p>
+  Feel free to take a look around, or <a href="https://github.com/pukar10">Check out his projects on GitHub</a>.
+</p>
