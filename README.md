@@ -1,8 +1,5 @@
-<div align="center">
-
 # pukarsubedi.com
 
-</div>
 Pukar's Homepage
 
 ### Local dev
